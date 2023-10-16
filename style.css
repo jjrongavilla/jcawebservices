@@ -1,0 +1,353 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+  background: rgb(230,166,17);
+background: linear-gradient(0deg, rgba(230,166,17,1) 0%, rgba(75,75,78,1) 35%, rgba(33,34,34,1) 100%);
+} */
+
+#Home {
+    background: rgba(0, 0, 0, 0.6) url(./assets/pexels-negative-space-160107.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-size: cover; 
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+
+
+.title {
+    font-size: 5vw;
+}
+
+i {
+  color: #B2832C;
+}
+/* button learn more hover */
+.wrapper{
+    position: fixed;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .link_wrapper{
+    position: relative;
+  }
+  
+  .learn{
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+  }
+  
+  .icon{
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+  }
+  
+  .icon svg{
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(45deg);
+    fill: #B2832C;
+    transition: all .35s;
+  }
+  
+  .learn:hover{
+    width: 200px;
+    border: 3px solid #B2832C;
+    background: transparent;
+    color: #E2E5EF;
+  }
+  
+  .learn:hover + .icon{
+    border: 3px solid #B2832C;
+    right: -25%;
+  }
+  /* button learn more hover */
+
+/* about */
+.hero {
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.heading h1 {
+  color: #B2832C;
+  font-size: 55px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.hero2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 65px auto;
+}
+
+.hero-content {
+  flex: 1;
+  width: 600px;
+  margin: 0px 25px;
+  animation: fadeInup 2s ease;
+}
+
+.hero-content h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero-content p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.hero-content button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero-content button:hover {
+  background-color: #B2832C;
+  transform: scale(1.1);
+}
+
+.hero-img {
+  flex: 1;
+  width: 600px;
+  margin: auto;
+  animation: fadeInRight 2s ease;
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .heading h1 {
+    font-size: 45px;
+    margin-top: 30px;
+  }
+  .hero {
+    margin: 0px;
+  }
+  .hero2 {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 0px 40px;
+  }
+  .hero-content {
+    width: 100%;
+    margin: 35px 0px;
+  }
+  .hero-content h2 {
+    font-size: 30px;
+  }
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .hero-content button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  .hero-img {
+    width: 100%;
+
+  }
+}
+@keyframes fadeInup {
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes fadeInRight {
+  0%{
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* about */
+#team{
+  /* display: flex; */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  
+}
+
+.mtt {
+  /* color: #B2832C; */
+  font-size: 35px;
+  text-align: center;
+  /* margin-top: 15px; */
+}
+
+.team{
+  position: relative;
+  width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.team .cards{
+  position: relative;
+  width: 250px;
+  height: 400px;
+  background: linear-gradient(#B2832C, #666 50%, #646566 30%, #2c2c2c);
+  margin: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.team .cards .imgbx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 100000;
+  border-radius: 20px;
+  overflow: hidden;
+  transform-origin: top;
+}
+
+.team .cards:hover .imgbx {
+  transform: translateY(30px) scale(0.6);
+  box-shadow: 10px 5px 5px rgba(75, 74, 74, 0.6);
+}
+
+.team .cards .imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team .cards .content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 30px;
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+
+.team .cards:hover .content {
+  transform: translateY(0);
+}
+
+.team .cards .content .details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.team .cards .content .details h2{
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.team .cards .content .details h2 span {
+  font-size: 0.8em;
+  /* font-weight: 400; */
+  color: #B2832C;
+}
+
+/* team */
+
+/* services */
+#services{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.what {
+  font-size: 45px;
+}
+
+.services .card .card-body h3 {
+  color: #B2832C;
+}
+
+.services .card img{
+  margin: 20px auto 5px;
+}
+/* services */
+
+/* why choose us */
+.why {
+  position: absolute;
+  left: 50%;
+}
+/* why choose us */
+
+
